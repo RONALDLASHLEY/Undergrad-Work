@@ -1,0 +1,292 @@
+<!--A first look at javascript (part III)-->
+<!-- Creating a C++ Trace Tutorial -->
+<!--Authored designed by Prof. Barimani-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Tracing Tutorial </title>
+
+<script type= "text/javascript">
+var count=0;
+
+var Alpha,Take, Pick, Pick, B, Beta;
+
+function trace()
+{  
+   if (count == 0)
+   {  
+     
+       document.getElementById("H").value=  50;
+       document.getElementById("line0").style.color="Black";
+       document.getElementById("line1").style.color="Red";  
+    }        
+    else
+    if (count == 1)
+    {  
+       document.getElementById("I").value=  7;
+       document.getElementById("line1").style.color="Black";
+       document.getElementById("line2").style.color="Red";  
+    }
+    else
+    if (count == 2)
+    {  
+
+       document.getElementById("BetaLine2B").value= 7; 
+       document.getElementById("BetaLine2A").value= 42;
+       document.getElementById("I1").value= 42
+       document.getElementById("line2").style.color="Black";
+       document.getElementById("line3").style.color="Red";  
+    }
+    else
+    if (count == 3)
+    {  
+       document.getElementById("line3").style.color="Green";
+       document.getElementById("line4").style.color="Red";
+       document.getElementById("E").value= 4;
+    }
+    else
+    if (count == 4)
+    {
+       document.getElementById("F").value= 40;
+       document.getElementById("G").value=  50;
+       document.getElementById("BLine2B").value=  40;
+       document.getElementById("BLine2A").value=  37;
+       document.getElementById("F6").value= 37;
+       document.getElementById("line4").style.color="Black";
+       document.getElementById("line5").style.color="Red";  
+    }   
+    else
+    if (count == 5)
+    {  
+       document.getElementById("F1").value= 37;
+       document.getElementById("PickLine3A").value= 21;
+       document.getElementById("PickLine3B").value=  50;
+       document.getElementById("PickLine3C").value=  37;
+       document.getElementById("G1").value= 21;
+       document.getElementById("H1").value= 21;
+       document.getElementById("line5").style.color="Black";
+       document.getElementById("line6").style.color="Red";  
+    }   
+    else
+    if (count == 6)
+    {  
+       document.getElementById("line6").style.color="Black";
+       document.getElementById("line7").style.color="Red"; 
+    }
+    else
+    if (count == 7)
+    {  
+       document.getElementById("line3").style.color="Black";
+       document.getElementById("line7").style.color="Black";
+       document.getElementById("line8").style.color="Red"; 
+    }
+    else
+    if (count == 8)
+    {
+       document.getElementById("line8").style.color="Black";
+       document.getElementById("line9").style.color="Red";
+    }
+    else
+    if (count == 9)
+    {
+       document.getElementById("alphaLineA1").value= 22;
+       document.getElementById("A").value= 16;
+       document.getElementById("alphaLineA2").value= 16;
+       document.getElementById("B").value= 21;
+       document.getElementById("line9").style.color="Green";
+       document.getElementById("line10").style.color="Red";
+    } 
+    else
+    if (count == 10)
+    {
+       document.getElementById("A1").value= 22;
+       document.getElementById("D").value= 2;
+       document.getElementById("line10").style.color="Black";
+       document.getElementById("line11").style.color="Red";
+    } 
+    else
+    if (count == 11)
+    {
+       document.getElementById("PickLine1A").value= 11;
+       document.getElementById("PickLine1B").value= 2;
+       document.getElementById("line11").style.color="Black";
+       document.getElementById("line12").style.color="Red";
+    }
+    else
+    if (count == 12)
+    {
+       document.getElementById("D1").value= 11;
+       document.getElementById("alphaLineB1").value= 32;   
+       document.getElementById("alphaLineB2").value= 22;
+       document.getElementById("pickLine2A").value= 11; 
+       document.getElementById("takeLine").value= 21;   
+       document.getElementById("line12").style.color="Black";
+       document.getElementById("line13").style.color="Red"; 
+    }   
+    else
+    if (count == 13)
+    { 
+       document.getElementById("B1").value= 11;
+       document.getElementById("alphaLineC1").value= 32;  
+       document.getElementById("takeLine1").value= 11;
+       document.getElementById("line13").style.color="Black";
+       document.getElementById("line14").style.color="Red";
+    }  
+    else
+    if (count == 14)
+    { 
+       document.getElementById("A2").value= 32;  
+       document.getElementById("takeLine1").value= 11;
+       document.getElementById("line14").style.color="Black";
+       document.getElementById("line15").style.color="Red";
+    }
+    else
+    if (count == 15)
+    { 
+       document.getElementById("return1").value= 15; 
+       document.getElementById("TakeLine2").value= 11;
+       document.getElementById("PickLine2").value= 11;
+       document.getElementById("line15").style.color="Black";
+       document.getElementById("line16").style.color="Red";
+    } 
+    else
+    if (count == 16)
+    {
+       document.getElementById("Beta1").value= 80;
+       document.getElementById("Beta3").value= 15;
+       document.getElementById("Beta2").value= 42;
+       document.getElementById("line16").style.color="Black";
+       document.getElementById("line9").style.color="Red";
+    }        
+    else
+    if (count == 17)
+    {
+       document.getElementById("I2").value= 80;
+       document.getElementById("alphaPlus").value= 21;
+       document.getElementById("alphaPlus1").value= 22;
+       document.getElementById("line9").style.color="Black";
+       document.getElementById("line17").style.color="Red";
+    }  
+    else
+    if (count == 18)
+    {
+       document.getElementById("H2").value= 22;
+       document.getElementById("line17").style.color="Black";
+       document.getElementById("line18").style.color="Red";
+    } 
+    else
+    if (count == 19)
+    {
+       document.getElementById("line18").style.color="Black";
+       document.getElementById("line19").style.color="Red";
+    }                                             
+    count++;
+}
+
+</script>
+</head>
+
+<body onLoad="clearPlease()">
+  <form id="F1"><br>
+  <input type = "button" value ="Forward" onClick="trace()">
+
+  <input type ="button" value="Backward" history.go="backtrace(count--)">
+
+<pre>
+int alpha= 16;
+int mytask(int take)
+{
+   <font id = "line10" color = "Black">alpha +=6;<input type= "text" id="alphaLineA1" size="2">=<input type= "text" id="alphaLineA2" size="2">+6</font>
+   <font id = "line11" color = "Black">int pick=2;</font>
+   <font id = "line12" color = "Black">pick +=9;<input type= "text" id="PickLine1A" size="2">=<input type= "text" id="PickLine1B" size="2">+9</font>
+   <font id = "line13" color = "Black">alpha -=pick-take;<input type= "text" id="alphaLineB1" size="2">=<input type= "text" id="alphaLineB2" size="2">-(<input type= "text" id="pickLine2A" size="2">-<input type= "text" id="takeLine" size="2">)</font>
+   <font id = "line14" color = "Black">take= alpha-21;<input type= "text" id="takeLine1" size="2">=<input type= "text" id="alphaLineC1" size="2">-21</font>
+   <font id = "line15" color = "Black">cout&lt;&lt;"take is:"&lt;&lt;take&lt;&lt"and alpha is:"&lt;&lt;alpha&lt;&lt;"\n";</font>
+   <font id = "line16" color = "Black">return pick - take + 15;<input type= "text" id="return1" size="2">=<input type= "text" id="PickLine2" size="2">-<input type= "text" id="TakeLine2" size="2">+15</font>
+}
+void yourtask (int& pick, int b)
+{
+   <font id = "line4" color = "Black">int alpha =4;</font>
+   <font id = "line5" color = "Black">b -=3;<input type= "text" id="BLine2A" size="2">=<input type= "text" id="BLine2B" size="2">-3</font>
+   <font id = "line6" color = "Black">pick = pick-b +8;<input type= "text" id="PickLine3A" size="2">=<input type= "text" id="PickLine3B" size="2">-<input type= "text" id="PickLine3C" size="2">+8</font>
+   <font id = "line7" color = "Black">cout&lt;&lt;"alpha:"&lt;&lt;alpha&lt;&lt" ,and pick:"&lt;&lt;pick&lt;&lt"\n";"&lt;&lt;alpha&lt;&lt" , and pick:&lt;&lt;pick&lt;&lt"\n";</font>
+}
+int main()
+{
+   <font id = "line0" color = "Red">int alpha= 50;</font>  
+   <font id = "line1" color = "Black">int beta = 7;</font>
+   <font id = "line2" color = "Black">beta* = 6;//<input type= "text" id="BetaLine2A" size="2">=<input type="text" id="BetaLine2B" size="2"> *6
+   <font id = "line3" color = "Black">yourtask(alpha, beta-2);
+   <font id = "line8" color = "Black">cout&lt;&lt;"beta and alpha are : "&lt;&lt;alpha&lt;&lt;" , and pick:&lt;&ltpick&lt;&lt"\n";</font>
+   <font id = "line9" color = "Black">beta+ =2 * mytask(alpha) + 8;<input type= "text" id="Beta1" size="2">=<input type="text" id="Beta2" size="2">+(2*<input type="text" id="Beta3" size="2">)+8</font>
+   <font id = "line17" color = "Black">alpha++;<input type= "text" id="alphaPlus1" size="2">=<input type= "text" id="alphaPlus" size="2">+1</font>
+   <font id = "line18" color = "Black">cout&lt;&lt;"beta is: "&lt;&lt;beta&lt;&lt;"\n";</font>
+   <font id = "line19" color = "Black">cout&lt;&lt;"alpha is: "&lt;&lt;alpha&lt;&lt;"\n"; </font> 
+}
+</form>
+
+</pre>
+
+  <div id="VariableAlpha"   style="position: absolute;   left: 600px; top: 270px; width: 100; height: 550;">
+              <u>alpha</u> <br>
+              <input type="text" id="E" size="2"><br>
+              <input type="text" id="E1" size="2"><br>
+  </div>
+  <div id="VariableB"   style="position: absolute;   left: 660px; top: 270px; width: 100; height: 550;">
+              <u>b</u> <br>
+              <input type="text" id="F" size="2"><br>
+              <input type="text" id="F6" size="2"><br>
+  </div>
+  <div id="VariablePick1"   style="position: absolute;   left: 715px; top: 270px; width: 100; height: 550;">
+              <u>&pick</u> <br>
+              <input type="text" id="G" size="2"><br>
+              <input type="text" id="G1" size="2"><br>
+  </div>
+
+  <div id="VariableAlpha"   style="position: absolute;   left: 600px; top: 425px; width: 100px; height: 450px;">
+              <u>alpha</u> <br>
+              <input type="text" id="H" size="2"><br>
+              <input type="text" id="H1" size="2"><br>
+              <input type="text" id="H2" size="2"><br>
+  </div>
+
+  <div id="VariableBeta"   style="position: absolute;   left: 700px; top: 425px; width: 100px; height: 450px;">
+
+              <u>beta</u> <br>
+              <input type="text" id="I" size="2"><br>
+              <input type="text" id="I1" size="2"><br>
+              <input type="text" id="I2" size="2"><br>
+              
+  </div> 
+
+  <div id="VariableTake"   style="position: absolute;   left: 600px; top: 150px; width: 100; height: 500;">
+              <u>take</u><br>
+              <input type="text" id="B" size="2"><br>
+              <input type="text" id="B1" size="2"><br>
+  </div>
+
+
+  <div id="VariablePick"   style="position: absolute;   left: 700px; top: 150px; width: 100; height: 500;">
+              <u>pick</u> <br>
+              <input type="text" id="D" size="2"><br>
+              <input type="text" id="D1" size="2"><br>
+  </div>
+ 
+  <div id="VariableAlpha"   style="position: absolute;   left: 600px; top: 0px; width: 100; height: 450;">
+              <u>alpha</u> <br>
+              <input type="text" id="A" size="2"><br>
+              <input type="text" id="A1" size="2"><br>
+              <input type="text" id="A2" size="2"><br>
+  </div>
+
+  <div id="IO"   style="position: absolute;  left: 900px; top: 450px; width: 100; height: 600;">
+               <u><b>IO SCREEN		</b></u><br>
+  </div>
+
+ <div id = IOL style="position: absolute; left: 900px; top: 470px; width: 1000px; height:9000px color: white; background:gray;"> 
+             
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P> 
+  </div>
+
+</body>
+</html>
